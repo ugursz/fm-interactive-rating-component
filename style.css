@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Overpass', sans-serif;
+}
+body {
+  height: 100vh;
+  font-size: 1.5rem;
+  background-color: hsl(216, 12%, 8%);
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container,
+.thank-you-state {
+  background-color: hsl(213, 19%, 18%);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 35rem;
+}
+/* Container styling */
+.container img {
+  background-color: hsl(213, 19%, 24%);
+  padding: 0.75rem;
+  border-radius: 50%;
+}
+.container h1 {
+  color: #fff;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.container p {
+  margin-bottom: 1rem;
+  color: hsl(217, 12%, 63%);
+}
+.container .buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container .buttons-container button {
+  width: 4rem;
+  height: 4rem;
+  background-color: hsl(213, 19%, 24%);
+  color: #fff;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+.container .buttons-container button:focus {
+  background-color: hsl(217, 12%, 63%);
+}
+.container .buttons-container button:hover {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.container .submit {
+  display: block;
+  margin-top: 2rem;
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 5rem;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+.container .submit:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: #fff;
+}
+/* Thank you state styling */
+.thank-you-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.thank-you-state img {
+  display: block;
+  margin: 2rem auto;
+}
+.thank-you-state .gray-bg {
+  background-color: hsl(213, 19%, 24%);
+  border-radius: 5rem;
+  color: hsl(25, 97%, 53%);
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+}
+.thank-you-state h3 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+.thank-you-state p {
+  color: hsl(217, 12%, 63%);
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.hidden {
+  display: none;
+}
